@@ -1,1 +1,4 @@
 *.pyc
+.antigravity/
+mcp.json.coverage
+.pytest_cache/
