@@ -1,0 +1,100 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Calculadora Tests" id="calculadora-tests">
+    <mxGraphModel dx="1113" dy="1372" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mod_infra" parent="1" style="rounded=1;arcSize=6;html=1;whiteSpace=wrap;                        fillColor=#F8FAFC;strokeColor=#CBD5E1;strokeWidth=1.5;                        fontColor=#1E293B;fontSize=13;fontStyle=1;                        verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;" value="" vertex="1">
+          <mxGeometry height="100" width="660" x="180" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pytest_ini" parent="1" style="shape=document;boundedLbl=1;html=1;whiteSpace=wrap;                        fillColor=#FFFFFF;strokeColor=#CBD5E1;strokeWidth=1.5;                        fontColor=#1E293B;fontSize=12;                        fontFamily=Inter,Roboto,system-ui,sans-serif;                        verticalAlign=middle;align=center;" value="pytest.ini&#xa;pythonpath = ." vertex="1">
+          <mxGeometry height="52" width="140" x="240" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="pytest_runner" parent="1" style="rounded=1;arcSize=50;html=1;whiteSpace=wrap;                        fillColor=#F1F5F9;strokeColor=#64748B;strokeWidth=1.5;                        fontColor=#1E293B;fontSize=13;fontStyle=1;                        fontFamily=Inter,Roboto,system-ui,sans-serif;                        verticalAlign=middle;align=center;" value="pytest" vertex="1">
+          <mxGeometry height="52" width="120" x="540" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="mod_test" parent="1" style="rounded=1;arcSize=6;html=1;whiteSpace=wrap;                        fillColor=#F0F9FF;strokeColor=#7DD3FC;strokeWidth=1.5;                        fontColor=#0C4A6E;fontSize=13;fontStyle=1;                        verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;" value="" vertex="1">
+          <mxGeometry height="320" width="900" x="60" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="tc1" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="two_positive_integers" vertex="1">
+          <mxGeometry height="44" width="170" x="100" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="tc2" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="by_zero_right_side" vertex="1">
+          <mxGeometry height="44" width="170" x="300" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="tc3" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="by_zero_left_side" vertex="1">
+          <mxGeometry height="44" width="170" x="500" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="tc4" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="negative_and_positive" vertex="1">
+          <mxGeometry height="44" width="170" x="700" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="tc5" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="two_negatives" vertex="1">
+          <mxGeometry height="44" width="170" x="100" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="tc6" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="floats" vertex="1">
+          <mxGeometry height="44" width="170" x="300" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="tc7" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="float_and_integer" vertex="1">
+          <mxGeometry height="44" width="170" x="500" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="tc8" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="large_numbers" vertex="1">
+          <mxGeometry height="44" width="170" x="700" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="tc9" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="is_commutative" vertex="1">
+          <mxGeometry height="44" width="170" x="185" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="tc10" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="identity_element_one" vertex="1">
+          <mxGeometry height="44" width="170" x="425" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="tc11" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=11;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="float_precision_approx" vertex="1">
+          <mxGeometry height="44" width="170" x="665" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="mod_calc" parent="1" style="rounded=1;arcSize=6;html=1;whiteSpace=wrap;                        fillColor=#F8FAFC;strokeColor=#CBD5E1;strokeWidth=1.5;                        fontColor=#1E293B;fontSize=13;fontStyle=1;                        verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;" value="" vertex="1">
+          <mxGeometry height="112" width="980" x="60" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_add" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=12;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="add(a, b)" vertex="1">
+          <mxGeometry height="44" width="120" x="90" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_subtract" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=12;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="subtract(a, b)" vertex="1">
+          <mxGeometry height="44" width="120" x="240" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_multiply" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=2.5;                        fontColor=#1E3A5F;fontSize=12;fontStyle=1;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="multiply(a, b)" vertex="1">
+          <mxGeometry height="56" width="130" x="450" y="576" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_divide" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=12;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="divide(a, b)&#xa;[ValueError b==0]" vertex="1">
+          <mxGeometry height="44" width="130" x="620" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_power" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=12;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="power(a, b)" vertex="1">
+          <mxGeometry height="44" width="110" x="790" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="fn_factorial" parent="1" style="rounded=1;arcSize=20;html=1;whiteSpace=wrap;                        fillColor=#EFF6FF;strokeColor=#3B82F6;strokeWidth=1.5;                        fontColor=#1E3A5F;fontSize=12;                        fontFamily=Inter,Roboto,system-ui,sans-serif;" value="factorial(n)&#xa;[ValueError n&lt;0]" vertex="1">
+          <mxGeometry height="44" width="110" x="930" y="584" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="pytest_ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;                        strokeColor=#64748B;strokeWidth=1.5;                        endArrow=open;endFill=0;                        dashed=1;dashPattern=6 3;                        fontSize=11;fontColor=#64748B;                        exitX=1;exitY=0.5;exitDx=0;exitDy=0;                        entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="pytest_runner" value="configura pythonpath">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="pytest_runner" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;                        strokeColor=#1E293B;strokeWidth=2;                        endArrow=block;endFill=1;                        fontSize=11;fontColor=#1E293B;                        exitX=0.5;exitY=1;exitDx=0;exitDy=0;                        entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mod_test" value="ejecuta suite (11 tests)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="mod_test" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;                        strokeColor=#2563EB;strokeWidth=2;                        endArrow=block;endFill=1;                        dashed=1;dashPattern=8 4;                        fontSize=11;fontColor=#2563EB;                        exitX=0.5;exitY=1;exitDx=0;exitDy=0;                        entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fn_multiply" value="assert multiply(a, b)  [×11]">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cXFegnqu6ILIFceVUeE4-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 13px; font-weight: 700;&quot;&gt;Infraestructura de Tests&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="224" x="176" y="-16" as="geometry" />
+        </mxCell>
+        <mxCell id="cXFegnqu6ILIFceVUeE4-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 13px; font-weight: 700;&quot;&gt;tests/test_calculadora.py · 11 test cases&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="344" x="72" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="cXFegnqu6ILIFceVUeE4-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 13px; font-weight: 700; text-align: left;&quot;&gt;Calculadora.py&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="80" y="504" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "title": "Integración: Calculadora.py y sus Tests",
+  "type": "module-diagram",
+  "source": "edited",
+  "profile": "default",
+  "theme": "tech-blue",
+  "layout": "horizontal",
+  "counts": {
+    "nodes": 19,
+    "edges": 3,
+    "modules": 3
+  },
+  "nodes": [
+    {
+      "id": "pytest_ini",
+      "label": "pytest.ini\npythonpath = .",
+      "type": "document",
+      "module": "infra",
+      "size": "medium"
+    },
+    {
+      "id": "pytest_runner",
+      "label": "pytest",
+      "type": "terminal",
+      "module": "infra",
+      "size": "medium"
+    },
+    {
+      "id": "tc1",
+      "label": "two_positive_integers",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc2",
+      "label": "by_zero_right_side",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc3",
+      "label": "by_zero_left_side",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc4",
+      "label": "negative_and_positive",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc5",
+      "label": "two_negatives",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc6",
+      "label": "floats",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc7",
+      "label": "float_and_integer",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc8",
+      "label": "large_numbers",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc9",
+      "label": "is_commutative",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc10",
+      "label": "identity_element_one",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "tc11",
+      "label": "float_precision_approx",
+      "type": "process",
+      "module": "test_mod",
+      "size": "small"
+    },
+    {
+      "id": "fn_add",
+      "label": "add(a, b)",
+      "type": "process",
+      "module": "calc_mod",
+      "size": "small"
+    },
+    {
+      "id": "fn_subtract",
+      "label": "subtract(a, b)",
+      "type": "process",
+      "module": "calc_mod",
+      "size": "small"
+    },
+    {
+      "id": "fn_multiply",
+      "label": "multiply(a, b)",
+      "type": "process",
+      "module": "calc_mod",
+      "size": "small"
+    },
+    {
+      "id": "fn_divide",
+      "label": "divide(a, b)\n[ValueError b==0]",
+      "type": "process",
+      "module": "calc_mod",
+      "size": "small"
+    },
+    {
+      "id": "fn_power",
+      "label": "power(a, b)",
+      "type": "process",
+      "module": "calc_mod",
+      "size": "small"
+    },
+    {
+      "id": "fn_factorial",
+      "label": "factorial(n)\n[ValueError n<0]",
+      "type": "process",
+      "module": "calc_mod",
+      "size": "small"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "pytest_ini",
+      "to": "pytest_runner",
+      "type": "optional",
+      "label": "configura pythonpath"
+    },
+    {
+      "id": "edge-2",
+      "from": "pytest_runner",
+      "to": "tc1",
+      "type": "primary",
+      "label": "ejecuta suite"
+    },
+    {
+      "id": "edge-3",
+      "from": "tc1",
+      "to": "fn_multiply",
+      "type": "data",
+      "label": "assert multiply()"
+    }
+  ],
+  "modules": [
+    {
+      "id": "infra",
+      "label": "Infraestructura"
+    },
+    {
+      "id": "test_mod",
+      "label": "tests/test_calculadora.py  ·  11 test cases"
+    },
+    {
+      "id": "calc_mod",
+      "label": "Calculadora.py"
+    }
+  ]
+}

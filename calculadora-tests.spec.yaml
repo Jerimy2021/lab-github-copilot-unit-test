@@ -1,0 +1,168 @@
+meta:
+  theme: tech-blue
+  layout: horizontal
+  routing: orthogonal
+  source: edited
+  title: 'Integración: Calculadora.py y sus Tests'
+  description: >
+    Pipeline limpio: pytest.ini → pytest → test suite (11 casos) → multiply(a,b). 3 flechas inter-módulo. Los 11 test
+    cases se muestran dentro del contenedor sin flechas individuales que se crucen.
+modules:
+  - id: infra
+    label: Infraestructura
+  - id: test_mod
+    label: tests/test_calculadora.py  ·  11 test cases
+  - id: calc_mod
+    label: Calculadora.py
+nodes:
+  - id: pytest_ini
+    label: |-
+      pytest.ini
+      pythonpath = .
+    type: document
+    module: infra
+    size: medium
+  - id: pytest_runner
+    label: pytest
+    type: terminal
+    module: infra
+    size: medium
+  - id: tc1
+    label: two_positive_integers
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 20
+      'y': 56
+  - id: tc2
+    label: by_zero_right_side
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 190
+      'y': 56
+  - id: tc3
+    label: by_zero_left_side
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 360
+      'y': 56
+  - id: tc4
+    label: negative_and_positive
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 530
+      'y': 56
+  - id: tc5
+    label: two_negatives
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 20
+      'y': 136
+  - id: tc6
+    label: floats
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 190
+      'y': 136
+  - id: tc7
+    label: float_and_integer
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 360
+      'y': 136
+  - id: tc8
+    label: large_numbers
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 530
+      'y': 136
+  - id: tc9
+    label: is_commutative
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 100
+      'y': 216
+  - id: tc10
+    label: identity_element_one
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 290
+      'y': 216
+  - id: tc11
+    label: float_precision_approx
+    type: process
+    module: test_mod
+    size: small
+    position:
+      x: 460
+      'y': 216
+  - id: fn_add
+    label: add(a, b)
+    type: process
+    module: calc_mod
+    size: small
+  - id: fn_subtract
+    label: subtract(a, b)
+    type: process
+    module: calc_mod
+    size: small
+  - id: fn_multiply
+    label: multiply(a, b)
+    type: process
+    module: calc_mod
+    size: small
+    style:
+      fillColor: '#DBEAFE'
+      strokeColor: '#2563EB'
+      strokeWidth: 2
+  - id: fn_divide
+    label: |-
+      divide(a, b)
+      [ValueError b==0]
+    type: process
+    module: calc_mod
+    size: small
+  - id: fn_power
+    label: power(a, b)
+    type: process
+    module: calc_mod
+    size: small
+  - id: fn_factorial
+    label: |-
+      factorial(n)
+      [ValueError n<0]
+    type: process
+    module: calc_mod
+    size: small
+edges:
+  - from: pytest_ini
+    to: pytest_runner
+    type: optional
+    label: configura pythonpath
+  - from: pytest_runner
+    to: tc1
+    type: primary
+    label: ejecuta suite
+  - from: tc1
+    to: fn_multiply
+    type: data
+    label: assert multiply()
