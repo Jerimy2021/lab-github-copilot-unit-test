@@ -1,5 +1,5 @@
 import pytest
-from math_utils import generate_fibonacci, factorial
+from math_utils import generate_fibonacci, factorial, is_even
 
 def test_generate_fibonacci():
     assert generate_fibonacci(0) == []
@@ -14,3 +14,9 @@ def test_factorial_utils():
     assert factorial(5) == 120
     with pytest.raises(ValueError, match="Factorial is not defined for negative numbers."):
         factorial(-1)
+
+def test_is_even():
+    assert is_even(2) == True
+    assert is_even(3) == False
+    assert is_even(0) == True
+    assert is_even(-4) == True

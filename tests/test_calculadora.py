@@ -1,5 +1,5 @@
 import pytest
-from Calculadora import add, subtract, multiply, divide, power, factorial
+from Calculadora import add, subtract, multiply, divide, power, factorial, square
 
 def test_add():
     assert add(2, 3) == 5
@@ -32,3 +32,8 @@ def test_factorial():
     assert factorial(0) == 1
     with pytest.raises(ValueError, match="Factorial is not defined for negative numbers."):
         factorial(-1)
+
+def test_square():
+    assert square(4) == 16
+    assert square(-3) == 9
+    assert square(0) == 0

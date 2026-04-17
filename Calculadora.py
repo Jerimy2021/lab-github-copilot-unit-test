@@ -34,3 +34,8 @@ def factorial(n):
     for i in range(1, n + 1):
         result *= i
     return result
+
+
+def square(a):
+    """Returns the square of a number."""
+    return a * a

@@ -20,3 +20,8 @@ def factorial(n):
     for i in range(1, n + 1):
         result *= i
     return result
+
+
+def is_even(n):
+    """Returns True if a number is even, otherwise False."""
+    return n % 2 == 0
